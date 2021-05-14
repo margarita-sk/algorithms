@@ -14,7 +14,7 @@ public class BreadthFirstSearchService {
         var resultPath = new ArrayList<Node>();
 
         if (!graf.contains(startNode) || !graf.contains(endNode)) {
-            log.info("There are no searched nodes");
+            log.warning("There are no searched nodes");
             return new ArrayList<>();
         }
 
@@ -31,7 +31,6 @@ public class BreadthFirstSearchService {
         resultPath.add(startNode);
 
         return clearPath(resultPath);
-//        return resultPath;
     }
 
     private ArrayList<Node> clearPath(ArrayList<Node> path) {

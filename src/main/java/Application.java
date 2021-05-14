@@ -22,7 +22,7 @@ public class Application {
         bob.setConnectedNodes(List.of(peggy));
         peggy.setConnectedNodes(List.of(alice));
 
-        var graf = List.of(kim, claire, alice, bob, tom, jhonny, peggy);
+        var graf = List.of(kim, jhonny, peggy);
 
         var bfs = new BreadthFirstSearchService();
         var path = bfs.search(kim, tom, graf);
